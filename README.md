@@ -40,7 +40,8 @@ Endpoint: 👉 **[https://localhost:7121/generate-token](https://localhost:7121/
 
 Thanks to the UI, we can easily create tokens:
 
-![Token Generation](Images/Thanks%20to%20TokenService,%20we%20can%20easily%20create%20tokens%20through%20the%20interface..png)
+<img width="971" height="337" alt="Thanks to TokenService, we can easily create tokens through the interface" src="https://github.com/user-attachments/assets/429d6544-46df-462b-8d40-1ed3170bf891" />
+
 
 The generated token is then used in **Postman/Insomnia** when making requests to the secured endpoint `/api1`.
 
@@ -51,10 +52,12 @@ The generated token is then used in **Postman/Insomnia** when making requests to
 When accessing `API_1` through the Gateway, a **valid JWT** must be provided. Otherwise, access is denied.
 
 ✅ Successful request with JWT:
-![API1 Auth](Images/api1%20Gateway%20Authentication%20&%20Authorization%20.png)
+<img width="1422" height="752" alt="API 1 can be accessed through authentication with tokens generated through the token service" src="https://github.com/user-attachments/assets/00c08d2c-a539-47e3-af19-0c706749523b" />
+
 
 ❌ Unauthorized attempt (no or invalid token):
-![Unauthorized](Images/Authentication%20was%20not%20performed%20or%20was%20performed%20incorrectly.png)
+<img width="1400" height="653" alt="401 Unauthorized" src="https://github.com/user-attachments/assets/5f076f0f-5324-4e9e-9f9c-0815a4aa4b6a" />
+
 
 ---
 
@@ -64,20 +67,9 @@ Unlike `API_1`, these services do not require authentication.
 They can be accessed freely via the Gateway:
 
 * Request to `/api2`:
-  ![API2 Gateway](Images/api2%20Gateway.png)
+<img width="1381" height="637" alt="API 2  can be configured with both inmemory and config" src="https://github.com/user-attachments/assets/9eb58cec-26d9-4fdb-b6a7-bd79daba04e3" />
 
 * Request to `/api3`:
-  ![API3 Gateway](Images/api3%20Gateway.png)
+<img width="1370" height="665" alt="api3" src="https://github.com/user-attachments/assets/0c15d857-bfb4-487b-be38-e02be4a55cb8" />
 
 ---
-
-## 📌 JWT Key Setup
-
-The signing key is defined in `appsettings.json`.
-A secure, minimum **256-bit key** must be used for HS256 algorithm.
-
-![Token Key](Images/Role-Based%20Security%20Token%20Key%20Generation.png)
-
----
-
-
